@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <input type="text" id="eng">
+     <button onclick="convert()">Convert</button>
+     <p id="result"></p>
+</body>
+</html>
+
+<script>
+     function convert() {
+          let eng = document.getElementById("eng").value;
+          
+          let arrEng = ["apple","banana","orange"]
+          let arrVn = ["táo","chuối","cam"]
+
+          for (i=0;i<arrEng.length;i++) {
+               if (arrEng[i]==eng) {
+                    document.getElementById("result").innerHTML = arrVn[i]
+               }
+          }
+     }
+</script>
